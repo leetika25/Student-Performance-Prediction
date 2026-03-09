@@ -1,9 +1,5 @@
 # 🎓 Student Performance Prediction
 
-![Python](https://img.shields.io/badge/Python-3.9-blue)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
-![Status](https://img.shields.io/badge/Project-Completed-green)
-
 ## 📌 Project Overview
 
 Student performance prediction is an important problem in the field of **Educational Data Mining**.  
