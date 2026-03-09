@@ -140,5 +140,3 @@ Student-Performance-Prediction
 Data Science Enthusiast | Machine Learning Learner
 
 ---
-
-⭐ If you found this project helpful, please consider **starring the repository**.
