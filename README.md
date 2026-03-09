@@ -1,97 +1,144 @@
-# 📊 Student Performance Prediction
+# 🎓 Student Performance Prediction
+
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
+![Status](https://img.shields.io/badge/Project-Completed-green)
 
 ## 📌 Project Overview
-This project uses **Machine Learning** to predict a student's **final exam grade (G3)** based on their study habits and previous academic performance. The model analyzes important factors like **study time, absences, and previous grades** to estimate the final result.
 
-The project demonstrates the **complete Machine Learning workflow**, including data analysis, visualization, model training, and evaluation.
+Student performance prediction is an important problem in the field of **Educational Data Mining**.  
+This project uses **Machine Learning algorithms** to predict a student's **final exam grade (G3)** based on their previous academic performance and study behavior.
+
+The model analyzes factors such as **study time, absences, and previous grades** to estimate how a student might perform in the final exam.
+
+This project demonstrates a **complete Machine Learning workflow**, including:
+
+- Data Loading
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Data Visualization
+- Model Training
+- Model Evaluation
 
 ---
 
-## 🎯 Problem Statement
-Predict the **final student grade (G3)** using previous academic performance and study-related features.
+# 🎯 Problem Statement
+
+The objective of this project is to **predict the final grade (G3)** of a student using previous academic performance and study-related features.
+
+Predicting student performance can help educators:
+
+- Identify struggling students early
+- Provide academic support
+- Improve learning outcomes
 
 ---
 
-## 📥 Input Features
-The following features are used as input variables for the machine learning model:
+# 📊 Dataset Information
 
-- **Study time** – Weekly study time of the student  
-- **Absences** – Number of school absences  
-- **G1** – First period grade  
-- **G2** – Second period grade  
+The dataset contains student academic information such as:
 
-### Example Input
-study_time = 3
+- Study habits
+- Attendance
+- Previous grades
+
+### Key Features Used
+
+| Feature | Description |
+|------|-------------|
+| studytime | Weekly study time |
+| absences | Number of school absences |
+| G1 | First period grade |
+| G2 | Second period grade |
+| G3 | Final grade (Target Variable) |
+
+---
+
+# 📥 Example Input
+
+```
+studytime = 3
 absences = 5
 G1 = 12
 G2 = 13
+```
 
+# 📤 Predicted Output
 
----
-
-## 📤 Output (Target Variable)
-
-The model predicts:
-
-**G3 – Final Grade**
-
-### Example Output
+```
 Predicted Final Grade (G3) = 14
-
-
-This helps estimate how well a student might perform in the final exam.
+```
 
 ---
 
-## ⚙️ Technologies Used
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
+# ⚙️ Technologies Used
+
+- **Python**
+- **Pandas** – Data manipulation
+- **NumPy** – Numerical computing
+- **Matplotlib** – Data visualization
+- **Seaborn** – Statistical visualization
+- **Scikit-learn** – Machine learning models
 
 ---
 
-## 🤖 Machine Learning Models Used
+# 🤖 Machine Learning Models
 
-### 1️⃣ Linear Regression
-Used to predict the final grade based on a linear relationship between the input features and the target variable.
+## 1️⃣ Linear Regression
+A basic regression model used to predict the final grade based on a linear relationship between input features and the target variable.
 
-### 2️⃣ Random Forest Regressor
-An ensemble machine learning model used to improve prediction accuracy and identify feature importance.
-
----
-
-## 📊 Model Evaluation
-The models were evaluated using:
-
-- Mean Absolute Error (MAE)
-- Mean Squared Error (MSE)
-- R² Score
-
-These metrics help measure how accurately the model predicts student grades.
+## 2️⃣ Random Forest Regressor
+An ensemble machine learning algorithm that improves prediction accuracy by combining multiple decision trees.
 
 ---
 
-## 📈 Key Insights
-- Previous grades (**G1 and G2**) are the most important factors in predicting the final grade.
-- Study time also affects performance.
-- Random Forest model provides better prediction accuracy compared to Linear Regression.
+# 📊 Model Evaluation
+
+The models were evaluated using the following metrics:
+
+- **Mean Absolute Error (MAE)**
+- **Mean Squared Error (MSE)**
+- **R² Score**
+
+These metrics measure how well the model predicts the final grade.
 
 ---
 
-## 📁 Project Structure
+# 📈 Key Insights
+
+- Previous grades (**G1 and G2**) are the **strongest predictors** of the final grade.
+- Students with **higher study time generally perform better**.
+- **Random Forest Regressor performed better** than Linear Regression in prediction accuracy.
+
+---
+
+# 📁 Project Structure
+
+```
 Student-Performance-Prediction
 │
-├── student_data.csv
-├── student_performance.ipynb
-├── README.md
-
+├── student_data.csv                # Dataset
+├── student_performance.ipynb       # ML model and analysis
+└── README.md                       # Project documentation
+```
 
 ---
 
-## 🚀 Future Improvements
-- Add more machine learning models
-- Deploy the project using **Streamlit Web App**
-- Create an interactive dashboard for predictions
+# 🚀 Future Improvements
+
+- Build more advanced models (XGBoost, Gradient Boosting)
+- Deploy the model using **Streamlit Web App**
+- Create an **interactive dashboard**
+- Use more features for better prediction accuracy
+
+---
+
+# 👩‍💻 Author
+
+**Leetika**
+
+Data Science Enthusiast | Machine Learning Learner
+
+---
+
+⭐ If you found this project helpful, please consider **starring the repository**.
