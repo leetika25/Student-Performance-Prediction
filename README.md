@@ -1,138 +1,90 @@
-# 🎓 Student Performance Prediction
+# 🎓 Student Performance Prediction System
 
-## 📌 Project Overview
+A Machine Learning web application that predicts a student's final exam grade based on study habits and previous academic performance.
+The project uses a Random Forest Regression model and an interactive Streamlit web application for real-time predictions.
 
-Student performance prediction is an important problem in the field of **Educational Data Mining**.  
-This project uses **Machine Learning algorithms** to predict a student's **final exam grade (G3)** based on their previous academic performance and study behavior.
+------------------------------------------------------------
 
-The model analyzes factors such as **study time, absences, and previous grades** to estimate how a student might perform in the final exam.
+🚀 FEATURES
 
-This project demonstrates a **complete Machine Learning workflow**, including:
+- Predict student final grade (G3)
+- Interactive Streamlit web interface
+- Machine Learning model using Random Forest
+- Simple and user-friendly UI
 
-- Data Loading
-- Data Cleaning
-- Exploratory Data Analysis (EDA)
-- Data Visualization
-- Model Training
-- Model Evaluation
+------------------------------------------------------------
 
----
+📊 INPUT FEATURES
 
-# 🎯 Problem Statement
+The model uses the following inputs:
 
-The objective of this project is to **predict the final grade (G3)** of a student using previous academic performance and study-related features.
+- Study Time (1–4 scale)
+- Number of Absences
+- First Period Grade (G1)
+- Second Period Grade (G2)
 
-Predicting student performance can help educators:
+Based on these features, the model predicts the Final Grade (G3).
 
-- Identify struggling students early
-- Provide academic support
-- Improve learning outcomes
+------------------------------------------------------------
 
----
+🛠 TECH STACK
 
-# 📊 Dataset Information
+- Python
+- Pandas
+- Scikit-learn
+- NumPy
+- Streamlit
 
-The dataset contains student academic information such as:
+------------------------------------------------------------
 
-- Study habits
-- Attendance
-- Previous grades
+📂 PROJECT STRUCTURE
 
-### Key Features Used
+Student-Performance-Prediction/
 
-| Feature | Description |
-|------|-------------|
-| studytime | Weekly study time |
-| absences | Number of school absences |
-| G1 | First period grade |
-| G2 | Second period grade |
-| G3 | Final grade (Target Variable) |
+    app.py
+    student_data.csv
+    student_performance.ipynb
+    requirements.txt
+    README.md
+    
+------------------------------------------------------------
 
----
+⚙ INSTALLATION & SETUP
 
-# 📥 Example Input
+Clone the repository
 
-```
-studytime = 3
-absences = 5
-G1 = 12
-G2 = 13
-```
+git clone https://github.com/leetika25/student-performance-prediction.git
 
-# 📤 Predicted Output
+Go to the project folder
 
-```
-Predicted Final Grade (G3) = 14
-```
+cd student-performance-prediction
 
----
+Install dependencies
 
-# ⚙️ Technologies Used
+pip install -r requirements.txt
 
-- **Python**
-- **Pandas** – Data manipulation
-- **NumPy** – Numerical computing
-- **Matplotlib** – Data visualization
-- **Seaborn** – Statistical visualization
-- **Scikit-learn** – Machine learning models
+Run the Streamlit app
 
----
+streamlit run app.py
 
-# 🤖 Machine Learning Models
+------------------------------------------------------------
 
-## 1️⃣ Linear Regression
-A basic regression model used to predict the final grade based on a linear relationship between input features and the target variable.
+💻 APPLICATION
 
-## 2️⃣ Random Forest Regressor
-An ensemble machine learning algorithm that improves prediction accuracy by combining multiple decision trees.
+The Streamlit application allows users to enter student details and instantly predict the final exam grade using a trained Machine Learning model.
 
----
+------------------------------------------------------------
 
-# 📊 Model Evaluation
+📌 FUTURE IMPROVEMENTS
 
-The models were evaluated using the following metrics:
+- Add model evaluation metrics
+- Improve UI design
+- Deploy the app on Streamlit Cloud
+- Add more input features
 
-- **Mean Absolute Error (MAE)**
-- **Mean Squared Error (MSE)**
-- **R² Score**
+------------------------------------------------------------
 
-These metrics measure how well the model predicts the final grade.
+👩‍💻 AUTHOR
 
----
-
-# 📈 Key Insights
-
-- Previous grades (**G1 and G2**) are the **strongest predictors** of the final grade.
-- Students with **higher study time generally perform better**.
-- **Random Forest Regressor performed better** than Linear Regression in prediction accuracy.
-
----
-
-# 📁 Project Structure
-
-```
-Student-Performance-Prediction
-│
-├── student_data.csv                # Dataset
-├── student_performance.ipynb       # ML model and analysis
-└── README.md                       # Project documentation
-```
-
----
-
-# 🚀 Future Improvements
-
-- Build more advanced models (XGBoost, Gradient Boosting)
-- Deploy the model using **Streamlit Web App**
-- Create an **interactive dashboard**
-- Use more features for better prediction accuracy
-
----
-
-# 👩‍💻 Author
-
-**Leetika**
-
-Data Science Enthusiast | Machine Learning Learner
-
----
+Leetika
+Data Science Intern
