@@ -1,90 +1,159 @@
 # 🎓 Student Performance Prediction System
 
-A Machine Learning web application that predicts a student's final exam grade based on study habits and previous academic performance.
-The project uses a Random Forest Regression model and an interactive Streamlit web application for real-time predictions.
+A Machine Learning web application that predicts a student's **Final Exam Grade (G3)** based on study habits and previous academic performance.
 
-------------------------------------------------------------
+This project demonstrates the complete **Machine Learning lifecycle** including data preprocessing, model training, evaluation, and deployment using **Streamlit**.
 
-🚀 FEATURES
+---
 
-- Predict student final grade (G3)
-- Interactive Streamlit web interface
-- Machine Learning model using Random Forest
-- Simple and user-friendly UI
+# 🚀 Live Web Application
 
-------------------------------------------------------------
+🔗 **Live Demo:**  
+https://student-performance-prediction-spp.streamlit.app/
 
-📊 INPUT FEATURES
+---
 
-The model uses the following inputs:
+# 🎥 Demo Video
 
-- Study Time (1–4 scale)
+
+
+
+https://github.com/user-attachments/assets/7e8a214b-c123-466e-be51-502211ea720d
+
+
+
+---
+
+# 📌 Project Overview
+
+Educational institutions often want to identify students who may struggle academically.  
+This project predicts the **final student grade (G3)** using key academic indicators such as:
+
+- Study Time
 - Number of Absences
 - First Period Grade (G1)
 - Second Period Grade (G2)
 
-Based on these features, the model predicts the Final Grade (G3).
+The Machine Learning model learns patterns from historical student data and predicts the expected final exam score.
 
-------------------------------------------------------------
+---
 
-🛠 TECH STACK
+# 📊 Input Features
+
+| Feature | Description |
+|-------|-------------|
+| Study Time | Weekly study time (scale 1–4) |
+| Absences | Total number of school absences |
+| G1 | First period grade |
+| G2 | Second period grade |
+
+---
+
+# 🎯 Target Variable
+
+| Variable | Description |
+|--------|-------------|
+| G3 | Final Exam Grade |
+
+---
+
+# 🧠 Machine Learning Workflow
+
+1️⃣ Data Collection  
+2️⃣ Data Cleaning & Preprocessing  
+3️⃣ Exploratory Data Analysis (EDA)  
+4️⃣ Feature Selection  
+5️⃣ Model Training  
+6️⃣ Model Evaluation  
+7️⃣ Model Deployment using Streamlit  
+
+---
+
+# 🛠 Technologies Used
 
 - Python
 - Pandas
-- Scikit-learn
 - NumPy
+- Scikit-learn
 - Streamlit
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
 
-------------------------------------------------------------
+---
 
-📂 PROJECT STRUCTURE
+# 📂 Project Structure
 
-Student-Performance-Prediction/
+```
+Student-Performance-Prediction
+│
+├── app.py                     # Streamlit Web Application
+├── student_data.csv           # Dataset
+├── student_performance.ipynb  # Model Training Notebook
+├── model.pkl                  # Trained ML Model
+├── requirements.txt           # Dependencies
+├── demo_video.mp4             # Project Demo Video
+└── README.md                  # Project Documentation
+```
 
-    app.py
-    student_data.csv
-    student_performance.ipynb
-    requirements.txt
-    README.md
-    
-------------------------------------------------------------
+---
 
-⚙ INSTALLATION & SETUP
+# ⚙️ Installation & Setup
 
-Clone the repository
+### Clone the repository
 
-git clone https://github.com/leetika25/student-performance-prediction.git
+```
+git clone https://github.com/your-username/student-performance-prediction.git
+```
 
-Go to the project folder
+### Navigate to project directory
 
+```
 cd student-performance-prediction
+```
 
-Install dependencies
+### Install required libraries
 
+```
 pip install -r requirements.txt
+```
 
-Run the Streamlit app
+### Run the application
 
+```
 streamlit run app.py
+```
 
-------------------------------------------------------------
+---
 
-💻 APPLICATION
+# 📈 Model Prediction Logic
 
-The Streamlit application allows users to enter student details and instantly predict the final exam grade using a trained Machine Learning model.
+The model predicts the final grade based on patterns learned from historical student performance data.
 
-------------------------------------------------------------
+Previous grades (**G1 and G2**) have the **strongest correlation with final grade (G3)**, making them key predictors in the model.
 
-📌 FUTURE IMPROVEMENTS
+---
 
-- Add model evaluation metrics
-- Improve UI design
-- Deploy the app on Streamlit Cloud
-- Add more input features
+# 🌟 Key Features
 
-------------------------------------------------------------
+✔ Interactive Streamlit Web Interface  
+✔ Real-time Grade Prediction  
+✔ Machine Learning Model Integration  
+✔ Clean and User-Friendly UI  
+✔ Deployable ML Application  
 
-👩‍💻 AUTHOR
+---
 
-Leetika
-Data Science Intern
+# 📚 Dataset
+
+The project uses the **Student Performance Dataset**, which contains academic and behavioral attributes of students used to predict final grades.
+
+---
+
+# 👩‍💻 Author
+
+**Leetika**
+
+Aspiring **Data Scientist | Machine Learning Enthusiast**
+
+---
